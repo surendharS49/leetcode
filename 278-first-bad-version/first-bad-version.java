@@ -6,12 +6,12 @@ public class Solution extends VersionControl {
         int l=0;
         int h=n;
         while(l<h){
-            int mid=l+(h-l)/2;
-            if(isBadVersion(mid)==false){
-                l=mid+1;
+            int m=l+(h-l)/2;
+            if(isBadVersion(m)==false){
+                l=m+1;
 
             }else{
-                h=mid;
+                h=m;
             }
         }
         return l;
